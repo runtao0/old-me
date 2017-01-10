@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/AlegreyaSansSC-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/AlegreyaSansSC-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/AlegreyaSansSC-BlackItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+  font-weight: inherit;
+  z-index: inherit;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+
+body {
+  background: url("images/marble.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  /*overflow: hidden;*/
+  color: black;
+  box-sizing: content-box;
+  color: rgba(171, 169, 167, .9);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1), 0px -1px 0px rgba(5, 5, 5, 1);
+  z-index: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+img {
+  border: inset;
+  background: rgba(171, 169, 167, 1);
+  display: inline;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+}
+
+i:before {
+  font-size: 100px;
+  display: inline;
+  height: auto;
+  background: transparent;
+  text-shadow: 0px 2px 0px rgba(255, 255, 255, 1), 0px -2px 0px rgba(5, 5, 5, 1);
+  opacity: .7;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/*clearfix*/
+.group:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/*Sidebar*/
+#header {
+  display: inline;
+  position: fixed;
+  float: left;
+  width: 40%;
+  min-width: 400px;
+  top: 0;
+  left: 20px;
+  /*text-align: center;*/
+  color: rgba(171, 169, 167, .9);
+  text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1), 0px -1.5px 0px rgba(5, 5, 5, 1);
+}
+
+h1 {
+  margin: 0 0 0 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 64px;
+  text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1), 0px -1.5px 0px rgba(24, 23, 23, 1);
+}
+
+#header p {
+  margin: 0 120px;
+}
+
+#header > ul {
+  width: 100%;
+  height: auto;
+}
+
+#header li {
+  display: inline;
+  margin: 10px;
+}
+
+#header footer {
+  margin: 15px 160px;
+}
+
+/*Main*/
+#main {
+  display: inline;
+  top: 20px;
+  width: 60%;
+  min-width: 600px;
+  position: absolute;
+  left: 480px;
+  text-transform: lowercase;
+
+}
+
+article {
+  padding: 50px 50px 0px 50px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  margin: 5px 0 0 0;
+}
+
+#contact {
+  margin: 0 0 300px 0;
+}
+
+#banner > header, #skills h2, #contact h2 {
+  padding: 0 0 20px 0;
+}
+
+article > a {
+  float: left;
+  width: 50%;
+  padding: 0 10px 0 0;
+}
+
+article > div {
+  float: right;
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+
+.inner h2 {
+  line-height: 36px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0 0 0;
+}
+
+.skill-icon {
+  -webkit-filter: grayscale(95%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(95%);
+}
+
+
+.gallery > div {
+  margin: 5px 20px 10px 0;
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+.links {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  color: rgba(219, 198, 59, 0.9);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1), 0px -1px 0px rgba(65, 60, 14, 1);
+}
+
+/*Footer*/
+#footer {
+  padding: 0 50px;
+  font-size: 12px;
+  margin: 50px 0;
+}
+
+.icons {
+  float: left;
+}

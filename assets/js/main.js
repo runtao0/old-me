@@ -75,9 +75,9 @@
 			if (settings.fullScreenHeader) {
 
 				var $header = $('#header');
-				var $banner = $('#banner');
+				var $about = $('#about');
 				var $first = $('#first');
-				var $last = $('#last-project');
+				var $projects = $('#projects');
 				var $skills = $('#skills');
 				var $contact = $('#contact');
 
@@ -90,20 +90,20 @@
 
 							if (skel.breakpoint('mobile').active) {
 								$header.css('padding', '');
-								$banner.css('padding', '');
+								$about.css('padding', '');
 								$first.css('padding', '');
 								$skills.css('padding', '');
 								$contact.css('padding', '');
 							}
 							else {
 
-								var p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2.3);
+								var p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2.1);
 								$header.css('padding', p + 'px 0 ' + p + 'px 0');
-								$banner.css('padding', p + 'px 0 ' + p + 'px 50px');
+								$about.css('padding', p + 'px 0 ' + p + 'px 0px');
 								// $first.css('padding',  p + 'px 50px 0 50px');
-								$last.css('padding', '50px 50px ' + p + 'px 50px');
-								$skills.css('padding', '50px 0 ' + p + 'px 50px');
-								$contact.css('padding', '50px 0 ' + p + 'px 50px');
+								$projects.css('padding', '0 50px ' + p + 'px 0px');
+								$skills.css('padding', '50px 0 ' + p + 'px 0px');
+								$contact.css('padding', '50px 0 ' + p + 'px 0px');
 
 							}
 

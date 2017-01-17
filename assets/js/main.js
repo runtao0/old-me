@@ -12,12 +12,6 @@
 		// Full screen header?
 			fullScreenHeader: true,
 
-		// Parallax background effect?
-			parallax: true,
-
-		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 10
-
 	};
 
 	skel.breakpoints({
@@ -60,17 +54,6 @@
 					skel.breakpoint('mobile').active
 				);
 			});
-
-		// Scrolly links.
-			// $('.scrolly-middle').scrolly({
-			// 	speed: 1000,
-			// 	anchor: 'middle'
-			// });
-			//
-			// $('.scrolly').scrolly({
-			// 	speed: 1000,
-			// 	offset: function() { return (skel.breakpoint('mobile').active ? 70 : 190); }
-			// });
 
 		// Full screen header.
 			if (settings.fullScreenHeader) {

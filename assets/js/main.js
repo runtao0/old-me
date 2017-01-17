@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function($) {
 
 	var settings = {
@@ -61,15 +62,15 @@
 			});
 
 		// Scrolly links.
-			$('.scrolly-middle').scrolly({
-				speed: 1000,
-				anchor: 'middle'
-			});
-
-			$('.scrolly').scrolly({
-				speed: 1000,
-				offset: function() { return (skel.breakpoint('mobile').active ? 70 : 190); }
-			});
+			// $('.scrolly-middle').scrolly({
+			// 	speed: 1000,
+			// 	anchor: 'middle'
+			// });
+			//
+			// $('.scrolly').scrolly({
+			// 	speed: 1000,
+			// 	offset: function() { return (skel.breakpoint('mobile').active ? 70 : 190); }
+			// });
 
 		// Full screen header.
 			if (settings.fullScreenHeader) {
@@ -78,7 +79,7 @@
 				var $about = $('#about');
 				var $first = $('#first');
 				var $projects = $('#projects');
-				var $skills = $('#skills');
+				var $skills = $('#skillset');
 				var $contact = $('#contact');
 
 				if ($header.length > 0) {
@@ -97,7 +98,7 @@
 							}
 							else {
 
-								var p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2.1);
+								p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2.1);
 								$header.css('padding', p + 'px 0 ' + p + 'px 0');
 								$about.css('padding', p + 'px 0 ' + p + 'px 0px');
 								// $first.css('padding',  p + 'px 50px 0 50px');
@@ -118,46 +119,45 @@
 
 			}
 
-		// Parallax background.
+			$(document).ready(function() {
+				$(".buttonprojects").on("click", function( e ) {
 
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-				if (skel.vars.browser == 'ie'
-				||	skel.vars.mobile)
-					settings.parallax = false;
+					e.preventDefault();
+					var coord = ($( $("#projects") ).offset().top - p)
+					$("body, html").animate({
+						scrollTop: coord
+					}, 1000);
 
-			if (settings.parallax) {
+				});
+				$(".buttonabout").on("click", function( e ) {
 
-				var $dummy = $(), $bg;
+					e.preventDefault();
+					var coord = ($( $("#about") ).offset().top - p)
+					$("body, html").animate({
+						scrollTop: coord
+					}, 1000);
 
-				$window
-					.on('scroll.overflow_parallax', function() {
+				});
+				$(".buttonskillset").on("click", function( e ) {
 
-						// Adjust background position.
-							$bg.css('background-position', 'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+					e.preventDefault();
+					var coord = ($( $("#skillset") ).offset().top - p + 50)
+					$("body, html").animate({
+						scrollTop: coord
+					}, 1000);
 
-					})
-					.on('resize.overflow_parallax', function() {
+				});
+				$(".buttoncontact").on("click", function( e ) {
 
-						// If we're in a situation where we need to temporarily disable parallax, do so.
-							if (!skel.breakpoint('wide').active
-							||	skel.breakpoint('narrow').active) {
+					e.preventDefault();
+					var coord = ($( $("#contact") ).offset().top - p +50)
+					$("body, html").animate({
+						scrollTop: coord
+					}, 1000);
 
-								$body.css('background-position', '');
-								$bg = $dummy;
+				});
+			});
 
-							}
-
-						// Otherwise, continue as normal.
-							else
-								$bg = $body;
-
-						// Trigger scroll handler.
-							$window.triggerHandler('scroll.overflow_parallax');
-
-					})
-					.trigger('resize.overflow_parallax');
-
-			}
 
 		// Poptrox.
 			$('.gallery').poptrox({

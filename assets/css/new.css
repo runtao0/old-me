@@ -54,9 +54,13 @@ ul {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  font-size: 25px;
+  line-height: 37px;
 }
 
-
+h4 {
+  margin: 0;
+}
 
 body {
   /*margin: 30px;*/
@@ -169,7 +173,7 @@ h1 {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 
@@ -256,8 +260,4 @@ strong {
 
 .icons {
   float: left;
-}
-
-h4 {
-  margin: 10px 0;
 }

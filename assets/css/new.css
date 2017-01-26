@@ -183,7 +183,7 @@ h1 {
   float: right;
   width: 70%;
   padding: 0 50px;
-
+  max-width: 1200px;
   /*text-transform: lowercase;*/
 
 }

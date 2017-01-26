@@ -81,12 +81,12 @@
 							}
 							else {
 
-								p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2.1);
+								p = Math.max(100, ($window.height() - $header_header.outerHeight()) / 2.1);
 								$header.css('padding', p + 'px 0 ' + p + 'px 0');
 								$about.css('padding', p + 'px 0 ' + p + 'px 0px');
 								$projects.css('padding', '0 50px ' + p + 'px 0px');
 								$skills.css('padding', '50px 0 ' + p + 'px 0px');
-								$contact.css('padding', '50px 0 ' + p + 'px 0px');
+								$contact.css('padding', '50px 0 ' + (p - 15) + 'px 0px');
 
 							}
 

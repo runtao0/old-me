@@ -74,8 +74,8 @@ body {
   /*overflow: hidden;*/
   color: black;
   box-sizing: content-box;
-  color: rgba(87, 85, 85, 0.9);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1), 0px -1px 0px rgba(5, 5, 5, 1);
+  color: rgba(77, 75, 75, 1);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 
   position: relative;
   box-sizing: border-box;
@@ -150,8 +150,8 @@ p {
   top: 0;
 
   /*text-align: center;*/
-  color: rgba(87, 85, 85, 0.9);
-  text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1), 0px -1.5px 0px rgba(5, 5, 5, 1);
+  color: rgba(77, 75, 75, 1);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 #header > header {
   display: flex;
@@ -164,7 +164,8 @@ h1 {
   /*margin: 0 0 0 20px;*/
   font-weight: bold;
   font-size: 64px;
-  text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1), 0px -1.5px 0px rgba(24, 23, 23, 1);
+  color: rgba(77, 75, 75, 1);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 
 
@@ -201,9 +202,7 @@ h3 {
   margin: 0;
 }
 
-#contact {
-  margin: 0 0 300px 0;
-}
+
 
 #about h2, #projects h2, #skillset h2, #contact h2 {
   font-size: 64px;
@@ -249,7 +248,7 @@ article > div {
 strong {
 
   color: rgba(142, 125, 17, 0.9);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1), 0px -1px 0px rgba(65, 60, 14, 1);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 
 /*Footer*/

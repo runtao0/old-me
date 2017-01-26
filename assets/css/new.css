@@ -90,20 +90,35 @@ body {
   background-color: white;
 }
 
-#border {
+.border {
   position: fixed;
   z-index: 2;
+  background-color: white;
+}
+
+.left {
+  width: 30px;
+  height: 100%;
+  left: 0;
+}
+
+.bottom {
   bottom: 0;
   width: 100%;
   height: 30px;
-  background-color: white;
+}
+
+.right {
+  width: 30px;
+  height: 100%;
+  right: 0;
 }
 
 .containerall {
   position: relative;
-    z-index: 1;
-    border-left: 30px solid white;
-    border-right: 30px solid white;
+  z-index: 1;
+  border-left: 30px solid white;
+  border-right: 30px solid white;
 }
 
 img {

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/AlegreyaSansSC-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/AlegreyaSansSC-BlackItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+  font-weight: inherit;
+  z-index: inherit;
+  line-height: inherit;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  margin: 0;
+}
+
+body {
+  background: url("images/marble.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: normal;
+  color: black;
+  box-sizing: content-box;
+  color: rgba(77, 75, 75, 1);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 30px;
+  position: relative;
+  box-sizing: border-box;
+}

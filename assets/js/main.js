@@ -86,7 +86,7 @@
 								$about.css('padding', p + 'px 0 ' + p + 'px 0px');
 								$projects.css('padding', '0 0 ' + p + 'px 0px');
 								$skills.css('padding', '50px 0 ' + p + 'px 0px');
-								$contact.css('padding', '50px 0 ' + p + 'px 0px');
+								$contact.css('padding', '50px 0 ' + ($window.height() - p) + 'px 0px');
 							// }
 
 						})

@@ -80,13 +80,13 @@
 							// 	$contact.css('padding', '');
 							// }
 							// else {
-
 								p = Math.max(10, ($window.height() - $header_header.outerHeight()) / 2.1);
+								var contactTail = $window.height() - p - $contact.height();
 								$header.css('padding', p + 'px 0 ' + p + 'px 0');
 								$about.css('padding', p + 'px 0 ' + p + 'px 0px');
 								$projects.css('padding', '0 0 ' + p + 'px 0px');
 								$skills.css('padding', '50px 0 ' + p + 'px 0px');
-								$contact.css('padding', '50px 0 ' + ($window.height() - p) + 'px 0px');
+								$contact.css('padding', '50px 0 ' + contactTail + 'px 0px');
 							// }
 
 						})

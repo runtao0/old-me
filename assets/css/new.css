@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-.topborder {
+.top {
   top: 0;
   width: 100%;
   height: 5%;
@@ -132,7 +132,7 @@ h1 {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 5px;
+  padding: 0 1%;
   font-size: 200%;
 }
 
@@ -216,7 +216,7 @@ strong {
   #main {
       padding: 0 10px 0 50px;
   }
-  
+
   .gallery > li{
     width: 50px;
   }
@@ -242,6 +242,15 @@ strong {
 
   #projects {
     padding: 0;
+  }
+
+  .border {
+    display: none;
+    z-index: 0;
+  }
+
+  #header > header {
+    padding-left: 0px;
   }
 
 }

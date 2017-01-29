@@ -107,7 +107,7 @@
 					var coord = ($( $("#projects") ).offset().top - p)
 					$("body, html").animate({
 						scrollTop: coord
-					}, 1000);
+					}, 500);
 
 				});
 				$(".buttonabout").on("click", function( e ) {
@@ -116,7 +116,7 @@
 					var coord = ($( $("#about") ).offset().top - p)
 					$("body, html").animate({
 						scrollTop: coord
-					}, 1000);
+					}, 500);
 
 				});
 				$(".buttonskillset").on("click", function( e ) {
@@ -125,7 +125,7 @@
 					var coord = ($( $("#skillset") ).offset().top - p + 50)
 					$("body, html").animate({
 						scrollTop: coord
-					}, 1000);
+					}, 500);
 
 				});
 				$(".buttoncontact").on("click", function( e ) {
@@ -134,7 +134,7 @@
 					var coord = ($( $("#contact") ).offset().top - p +50)
 					$("body, html").animate({
 						scrollTop: coord
-					}, 1000);
+					}, 500);
 
 				});
 			});

@@ -69,13 +69,18 @@ img {
 
 i:before {
   font-size: 400%;
-  display: inline;
   height: auto;
   background: transparent;
   color: rgba(43, 42, 42, 1);
   text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
   opacity: .7;
-  margin-left: 26px;
+  width: 100%;
+  padding-left: 26px;
+}
+i {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button:hover{
@@ -184,7 +189,7 @@ article > div {
 
 
 .gallery > li {
-  margin: 0px 20px 20px 0;
+  margin-bottom: 20px;
   width: 100px;
   height: auto;
   display: inline-block;
@@ -192,6 +197,7 @@ article > div {
 }
 
 .gallery p {
+  width: 100%;
   font-size: 166%;
   text-align: center;
 }
@@ -209,6 +215,14 @@ strong {
 
   #main {
       padding: 0 10px 0 50px;
+  }
+  
+  .gallery > li{
+    width: 50px;
+  }
+
+  i:before {
+    padding-left: 13px;
   }
 }
 
@@ -229,4 +243,5 @@ strong {
   #projects {
     padding: 0;
   }
+
 }

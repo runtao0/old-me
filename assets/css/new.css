@@ -68,7 +68,7 @@ img {
 }
 
 i:before {
-  font-size: 400%;
+  font-size: 300%;
   height: auto;
   background: transparent;
   color: rgba(43, 42, 42, 1);
@@ -89,8 +89,6 @@ button:hover{
 
 p {
   font-family: 'PT_Sans', sans-serif;
-  font-size: 166%;
-
 }
 
 /*clearfix*/
@@ -115,12 +113,12 @@ p {
   flex-flow: column;
   flex-wrap: nowrap;
   text-align: center;
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 400%;
+  font-size: 200%;
   color: rgba(77, 75, 75, 1);
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
   line-height: 160%;
@@ -132,8 +130,8 @@ h1 {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1%;
-  font-size: 200%;
+  padding: 0 3%;
+  font-size: 100%;
 }
 
 
@@ -155,12 +153,12 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 200%;
+  font-size: 150%;
   margin: 0;
 }
 
 #header h2 {
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 article > a {
@@ -198,7 +196,6 @@ article > div {
 
 .gallery p {
   width: 100%;
-  font-size: 166%;
   text-align: center;
 }
 
@@ -209,8 +206,12 @@ strong {
 
 @media (max-width: 1000px) {
   body {
-    font-size: 6px;
-    line-height: 15px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  #header h2 {
+    padding-bottom: 20px;
   }
 
   #main {

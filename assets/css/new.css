@@ -100,7 +100,7 @@ p {
 /*Sidebar*/
 #header {
   position: fixed;
-  left: 2%;
+  left: 1%;
   width: 30%;
   top: 0;
 
@@ -140,7 +140,7 @@ h1 {
   display: inline;
   left: 30%;
   width: 70%;
-  padding: 0 50px;
+  padding: 0 5% 0 2%;
   max-width: 1200px;
 }
 

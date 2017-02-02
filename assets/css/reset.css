@@ -47,12 +47,8 @@ h4 {
   margin: 0;
 }
 
-.darken:hover {
-  color: black;
-}
-
-*[href]:hover {
-  color: black;
+a:hover {
+  color: rgb(125, 125, 125);
 }
 
 body {

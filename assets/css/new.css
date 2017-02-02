@@ -42,7 +42,7 @@
 
 @media (orientation: portrait) {
   .left, .right {
-    width: 5%;
+    width: 2.5%;
   }
 
   .top, .bottom {

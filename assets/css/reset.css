@@ -47,6 +47,14 @@ h4 {
   margin: 0;
 }
 
+.darken:hover {
+  color: black;
+}
+
+*[href]:hover {
+  color: black;
+}
+
 body {
   background: url("images/marble.jpg");
   background-size: auto;

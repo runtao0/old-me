@@ -53,8 +53,6 @@
 .containerall {
   position: relative;
   z-index: 1;
-  border-left: 30px solid white;
-  border-right: 30px solid white;
 }
 
 img {
@@ -101,7 +99,7 @@ p {
 /*Sidebar*/
 #header {
   position: fixed;
-  float: left;
+  left: 2%;
   width: 30%;
   top: 0;
 
@@ -143,8 +141,6 @@ h1 {
   width: 70%;
   padding: 0 50px;
   max-width: 1200px;
-  /*text-transform: lowercase;*/
-
 }
 
 #projects article:not(:nth-child(2)) {
@@ -210,12 +206,17 @@ strong {
     line-height: 20px;
   }
 
+  #header {
+    left: 1%;
+  }
+
   #header h2 {
     padding-bottom: 20px;
   }
 
   #main {
-      padding: 0 10px 0 50px;
+    width: calc(70% - 30px);
+    padding: 0 10px 0 20px;
   }
 
   .gallery > li{
@@ -228,6 +229,17 @@ strong {
 }
 
 @media (max-width: 600px) {
+  #main {
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  #header {
+    display: block;
+    position: static;
+    float: none;
+    width: 100%;
+  }
   .image {
     display: none;
     width: 0px;

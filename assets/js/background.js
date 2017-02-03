@@ -17,7 +17,6 @@ var freqX = (Math.random() * .5) + .2,
   freqY = (Math.random() * .5) + .2;
 
 window.start = function() {
-  console.log(`space: ${SEPARATION}, x: ${freqX}, y: ${freqY}`);
   init();
   animate();
 }

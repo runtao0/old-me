@@ -147,8 +147,12 @@ article > div {
   text-align: center;
 }
 
-@media (max-width: 1000px) {
-  .gallery > li{
+@media (max-width: 1200px) {
+  #header li {
+    margin: 0 5%;
+  }
+
+  .gallery > li {
     align-items: center;
     width: 16%;
   }
@@ -160,7 +164,7 @@ article > div {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
     font-size: 10px;
     line-height: 20px;

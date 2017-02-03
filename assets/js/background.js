@@ -1,6 +1,6 @@
 var SEPARATION = 100,
-  AMOUNTX = 150,
-  AMOUNTY = 150;
+  amountX = 100,
+  amountY = 100;
 
 var container;
 var camera, scene, renderer;
@@ -36,11 +36,11 @@ function init() {
 
   var i = 0;
 
-  for (var ix = 0; ix < AMOUNTX; ix++) {
-    for (var iy = 0; iy < AMOUNTY; iy++) {
+  for (var iX = 0; iX < amountX; iX++) {
+    for (var iY = 0; iY < amountY; iY++) {
       particle = particles[i++] = new THREE.Sprite(material);
-      particle.position.x = ix * SEPARATION - ((AMOUNTX * SEPARATION) / 2);
-      particle.position.z = iy * SEPARATION - ((AMOUNTY * SEPARATION) / 2);
+      particle.position.x = iX * SEPARATION - ((amountX * SEPARATION) / 2);
+      particle.position.z = iY * SEPARATION - ((amountY * SEPARATION) / 2);
       particle.scale.set(2000, 2000, 100)
       scene.add(particle);
     }
@@ -85,11 +85,11 @@ function render() {
   camera.lookAt(scene.position);
 
   var i = 0;
-  for (var ix = 0; ix < AMOUNTX; ix++) {
-    for (var iy = 0; iy < AMOUNTY; iy++) {
+  for (var iX = 0; iX < amountX; iX++) {
+    for (var iY = 0; iY < amountY; iY++) {
       particle = particles[i++];
-      particle.position.y = (Math.cos((ix + count) * 0.5) * 100) + (Math.sin((iy + count) * 0.8) * 50);
-      particle.scale.x = particle.scale.y = (Math.sin((ix + count) * 0.5) + 1) * 2 + (Math.sin((iy + count) * 0.8) + 1) * 2;
+      particle.position.y = (Math.cos((iX + count) * 0.5) * 100) + (Math.sin((iY + count) * 0.8) * 50);
+      particle.scale.x = particle.scale.y = (Math.sin((iX + count) * 0.5) + 1) * 2 + (Math.sin((iY + count) * 0.8) + 1) * 2;
     }
   }
 

@@ -13,8 +13,8 @@ var mouseX = 85,
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
 
-var freqX = (Math.random() * .5) + .2,
-  freqY = (Math.random() * .5) + .2;
+var freqX = (Math.random() * .4) + .2,
+  freqY = (Math.random() * .4) + .2;
 
 window.start = function() {
   console.log(`space: ${SEPARATION}, x: ${freqX}, y: ${freqY}`);

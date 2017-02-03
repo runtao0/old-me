@@ -3,13 +3,6 @@
   src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Alegreya';
-  src: url('../fonts/Alegreya/AlegreyaSansSC-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
 .top {
   top: 0;
   width: 100%;
@@ -61,7 +54,7 @@
 }
 
 img {
-  border: inset;
+  border: double;
   background: rgba(171, 169, 167, 1);
   display: inline;
   width: 100%;
@@ -74,8 +67,8 @@ i:before {
   font-size: 300%;
   height: auto;
   background: transparent;
-  color: rgba(43, 42, 42, 1);
-  text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
+  /*color: rgba(43, 42, 42, 1);*/
+  /*text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);*/
   opacity: .7;
   width: 100%;
   padding-left: 26px;
@@ -107,9 +100,6 @@ p {
   left: 1%;
   width: 30%;
   top: 0;
-
-  color: rgba(77, 75, 75, 1);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 #header > header {
   display: flex;
@@ -119,22 +109,15 @@ p {
   padding-left: 20px;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 200%;
-  color: rgba(77, 75, 75, 1);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
-  line-height: 160%;
-}
-
-
 #header li {
   display: inline;
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 3%;
+  margin: 0 3%;
   font-size: 100%;
+}
+
+#header ul {
+  justify-content: center;
 }
 
 
@@ -154,7 +137,7 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 150%;
+  font-size: 125%;
   margin: 0;
 }
 
@@ -182,7 +165,7 @@ article > div {
 }
 
 .skill-icon {
-  -webkit-filter: grayscale(95%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(95%);
   filter: grayscale(95%);
 }
 
@@ -198,11 +181,6 @@ article > div {
 .gallery p {
   width: 100%;
   text-align: center;
-}
-
-strong {
-  color: rgba(142, 125, 17, 0.9);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 
 @media (max-width: 1000px) {

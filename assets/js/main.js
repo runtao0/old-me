@@ -72,22 +72,13 @@
 					$window
 						.on('resize.overflow_fsh', function() {
 
-							// if (skel.breakpoint('mobile').active) {
-							// 	$header.css('padding', '');
-							// 	$about.css('padding', '');
-							// 	$first.css('padding', '');
-							// 	$skills.css('padding', '');
-							// 	$contact.css('padding', '');
-							// }
-							// else {
-								p = Math.max(10, ($window.height() - $header_header.outerHeight()) / 2.5);
+								p = Math.max(10, ($window.height() - $header_header.outerHeight()) / 2.8);
 								var bottom = $window.height() - p - $contact.height();
 								$header.css('padding', p + 'px 0 ' + bottom + 'px 0');
 								$about.css('padding', p + 'px 0 ' + bottom + 'px 0px');
 								$projects.css('padding', '0 0 ' + bottom + 'px 0px');
 								$skills.css('padding', '50px 0 ' + bottom + 'px 0px');
 								$contact.css('padding', '50px 0 ' + bottom + 'px 0px');
-							// }
 
 						})
 						.trigger('resize.overflow_fsh');

@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Alegreya';
-  src: url('../fonts/Alegreya/AlegreyaSansSC-Medium.ttf') format('truetype');
+  font-family: 'Play';
+  src: url('../fonts/Play/Play-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Alegreya';
-  src: url('../fonts/Alegreya/AlegreyaSansSC-BlackItalic.ttf') format('truetype');
+  font-family: 'Play';
+  src: url('../fonts/Play/Play-Bold.ttf') format('truetype');
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 html, body, header, nav, h1, a, ul, li,
@@ -36,32 +36,35 @@ ul {
   list-style: none;
   display: flex;
   flex-flow: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 160%;
 }
 
 h4 {
   margin: 0;
 }
 
+canvas {
+  position: fixed;
+  bottom: 0;
+}
+a {
+  transition: color 0.5s ease;
+}
 a:hover {
-  color: rgb(125, 125, 125);
+  color: rgb(120, 120, 120);
 }
 
 body {
-  background: url("images/marble.jpg");
-  background-size: auto;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: 'Alegreya', sans-serif;
+  font-family: 'Play', sans-serif;
   font-weight: normal;
-  color: black;
   box-sizing: content-box;
-  color: rgba(77, 75, 75, 1);
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  color: rgba(230, 230, 230, 1);
   font-size: 16px;
   line-height: 32px;
   position: relative;

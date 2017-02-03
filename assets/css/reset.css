@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Play';
-  src: url('../fonts/Play/Play-Regular.ttf') format('truetype');
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/CormorantGaramond-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Play';
-  src: url('../fonts/Play/Play-Bold.ttf') format('truetype');
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/CormorantGaramond-Medium.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -61,7 +61,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Play', sans-serif;
+  font-family: 'Cormorant', sans-serif;
   font-weight: normal;
   box-sizing: content-box;
   color: rgba(230, 230, 230, 1);

@@ -136,7 +136,7 @@ p {
 }
 
 h2 {
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 125%;
   margin: 0;
 }

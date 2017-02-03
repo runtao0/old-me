@@ -1,4 +1,4 @@
-var SEPARATION = (Math.random() * 100) + 50,
+var SEPARATION = (Math.random() * 100) + 100,
   amountX = 100,
   amountY = 100;
 

@@ -36,13 +36,13 @@ ul {
   list-style: none;
   display: flex;
   flex-flow: row;
-  width: 100%;
 }
 
 h1 {
   font-weight: bold;
   font-size: 200%;
-  line-height: 160%;
+  line-height: 150%;
+  white-space: nowrap;
 }
 
 h4 {

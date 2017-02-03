@@ -3,50 +3,6 @@
   src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype');
 }
 
-.top {
-  top: 0;
-  width: 100%;
-  height: 5%;
-  max-height: 30px;
-}
-
-.bottom {
-  bottom: 0;
-  width: 100%;
-  height: 5%;
-  max-height: 30px;
-}
-
-.border {
-  position: fixed;
-  z-index: 2;
-  background-color: white;
-}
-
-.left {
-  width: 2.5%;
-  max-width: 30px;
-  height: 100%;
-  left: 0;
-}
-
-.right {
-  right: 0;
-  width: 2.5%;
-  max-width: 30px;
-  height: 100%;
-}
-
-@media (orientation: portrait) {
-  .left, .right {
-    width: 2.5%;
-  }
-
-  .top, .bottom {
-    height: 2.5%;
-  }
-}
-
 .containerall {
   height: auto;
   position: relative;
@@ -55,7 +11,6 @@
 
 img {
   border: double;
-  background: rgba(171, 169, 167, 1);
   display: inline;
   width: 100%;
   height: auto;
@@ -78,10 +33,6 @@ i {
   padding: 25%;
 }
 
-button:hover{
-  cursor: pointer;
-}
-
 p {
   font-family: 'PT_Sans', sans-serif;
 }
@@ -94,40 +45,45 @@ p {
 }
 
 /*Sidebar*/
+
 #header {
-  position: fixed;
-  left: 1%;
-  width: 30%;
+  width: 80%;
   top: 0;
-}
-#header > header {
+  position: fixed;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   flex-wrap: nowrap;
   text-align: center;
-  padding-left: 20px;
+  align-items: baseline;
+  margin: 0 10%;
+  z-index: 2;
+  border-bottom:  1px rgba(145, 145, 145, 1) solid;
+  background-color: rgb(28, 28, 28);
+}
+
+#header > * {
+  padding: 0 2%;
+}
+
+#header > h1 {
+  padding: 0 2% 0 0;
 }
 
 #header li {
   display: inline;
   width: auto;
-  margin: 0 3%;
+  margin: 0 10%;
   font-size: 100%;
-}
-
-#header ul {
-  justify-content: center;
 }
 
 
 /*Main*/
 #main {
   position: absolute;
-  display: inline;
-  left: 30%;
-  width: 70%;
-  padding: 0 5% 0 2%;
-  max-width: 1200px;
+  left: 0;
+  width: 80%;
+  margin: 0 10%;
+  max-width: 1000px;
 }
 
 #projects article:not(:nth-child(2)) {
@@ -137,10 +93,7 @@ p {
 h2 {
   font-size: 125%;
   margin: 0;
-}
-
-#header h2 {
-  padding-bottom: 32px;
+  white-space: nowrap;
 }
 
 article > a {
@@ -182,24 +135,6 @@ article > div {
 }
 
 @media (max-width: 1000px) {
-  body {
-    font-size: 10px;
-    line-height: 20px;
-  }
-
-  #header {
-    left: 1%;
-  }
-
-  #header h2 {
-    padding-bottom: 20px;
-  }
-
-  #main {
-    width: calc(70% - 30px);
-    padding: 0 10px 0 20px;
-  }
-
   .gallery > li{
     align-items: center;
     width: 16%;
@@ -212,21 +147,19 @@ article > div {
   }
 }
 
+@media (max-width: 800px) {
+  body {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
 @media (max-width: 600px) {
-  #main {
-    left: 0;
-    width: 100%;
-    padding: 20px;
-  }
-  #header {
+
+  article > a {
     display: block;
-    position: static;
-    float: none;
     width: 100%;
-  }
-  .image {
-    display: none;
-    width: 0px;
+    padding: 0;
   }
   article > div {
     float: left;
@@ -241,24 +174,15 @@ article > div {
     padding: 0;
   }
 
-  .border {
-    display: none;
-    z-index: 0;
-  }
-
-  #header > header {
-    padding-left: 0px;
-  }
-
-}
-
-@media (min-width: 2500px) {
   #header {
-    width: 750px;
+    flex-flow: column;
   }
 
-  #main {
-    width: 1100;
-    left: 750px;
+  #header > * {
+    padding: 0;
+  }
+
+  #header li:first-child {
+    margin: 0 10% 0 0;
   }
 }

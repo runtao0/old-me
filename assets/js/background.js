@@ -53,10 +53,10 @@ function init() {
 
 function setUpCameraAndEvents() {
   renderer = new THREE.WebGLRenderer();
-  renderer.setClearColor( "#bdbdbd", .15 );
+  renderer.setClearColor( "rgb(28, 28, 28)", 1 );
   renderer.setPixelRatio( window.devicePixelRatio );
   renderer.setSize( window.innerWidth, window.innerHeight );
-  document.body.append( renderer.domElement );
+  document.body.prepend( renderer.domElement );
 
   document.addEventListener('mousemove', onDocumentMouseMove, false);
   window.addEventListener('resize', onWindowResize, false);

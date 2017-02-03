@@ -72,9 +72,8 @@
 					$window
 						.on('resize.overflow_fsh', function() {
 
-								p = Math.max(10, ($window.height() - $header_header.outerHeight()) / 2.8);
+								p = Math.max(10, ($window.height() - $header_header.outerHeight()) / 4);
 								var bottom = $window.height() - p - $contact.height();
-								$header.css('padding', p + 'px 0 ' + bottom + 'px 0');
 								$about.css('padding', p + 'px 0 ' + (bottom + 30) + 'px 0px');
 								$projects.css('padding', '0 0 ' + bottom + 'px 0px');
 								$skills.css('padding', '50px 0 ' + bottom + 'px 0px');

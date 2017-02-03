@@ -67,16 +67,15 @@ i:before {
   font-size: 300%;
   height: auto;
   background: transparent;
-  /*color: rgba(43, 42, 42, 1);*/
-  /*text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);*/
   opacity: .7;
   width: 100%;
-  padding-left: 26px;
 }
+
 i {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 25%;
 }
 
 button:hover{
@@ -136,7 +135,6 @@ p {
 }
 
 h2 {
-  /*font-weight: bold;*/
   font-size: 125%;
   margin: 0;
 }
@@ -175,7 +173,7 @@ article > div {
   width: 100px;
   height: auto;
   display: inline-block;
-
+  align-items: center;
 }
 
 .gallery p {
@@ -203,11 +201,14 @@ article > div {
   }
 
   .gallery > li{
-    width: 50px;
+    align-items: center;
+    width: 16%;
   }
-
-  i:before {
-    padding-left: 13px;
+  i {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30%;
   }
 }
 

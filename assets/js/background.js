@@ -1,4 +1,4 @@
-var SEPARATION = 100,
+var SEPARATION = (Math.random() * 100) + 100,
   amountX = 100,
   amountY = 100;
 
@@ -13,7 +13,11 @@ var mouseX = 85,
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
 
+var freqX = (Math.random() * .5) + .2,
+  freqY = (Math.random() * .5) + .2;
+
 window.start = function() {
+  console.log(`space: ${SEPARATION}, x: ${freqX}, y: ${freqY}`);
   init();
   animate();
 }
@@ -23,7 +27,7 @@ function init() {
   container = document.createElement('div');
   document.body.appendChild(container);
 
-  camera = new THREE.PerspectiveCamera(130, window.innerWidth / window.innerHeight, 1, 10000);
+  camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 10000);
   camera.position.z = 3500;
 
   scene = new THREE.Scene();
@@ -31,7 +35,7 @@ function init() {
   particles = [];
 
   var material = new THREE.SpriteMaterial({
-    color: "rgb(120, 120, 120)",
+    color: "rgb(93, 116, 120)",
   });
 
   var i = 0;
@@ -41,7 +45,7 @@ function init() {
       particle = particles[i++] = new THREE.Sprite(material);
       particle.position.x = iX * SEPARATION - ((amountX * SEPARATION) / 2);
       particle.position.z = iY * SEPARATION - ((amountY * SEPARATION) / 2);
-      particle.scale.set(2000, 2000, 100)
+      particle.scale.set(10, 10, 10)
       scene.add(particle);
     }
   }
@@ -88,8 +92,8 @@ function render() {
   for (var iX = 0; iX < amountX; iX++) {
     for (var iY = 0; iY < amountY; iY++) {
       particle = particles[i++];
-      particle.position.y = (Math.cos((iX + count) * 0.5) * 100) + (Math.sin((iY + count) * 0.8) * 50);
-      particle.scale.x = particle.scale.y = (Math.sin((iX + count) * 0.5) + 1) * 2 + (Math.sin((iY + count) * 0.8) + 1) * 2;
+      particle.position.y = 1.5 * (Math.cos((iX + count) * freqX) * 100) + (Math.sin((iY + count) * freqY) * 50);
+      particle.scale.x = particle.scale.y =  4 + ((Math.sin((iX + count) * 0.3) + 1) * 2 + (Math.sin((iY + count) * 0.5) + 1) * 2);
     }
   }
 

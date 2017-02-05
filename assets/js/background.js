@@ -92,7 +92,7 @@ function render() {
     for (var iY = 0; iY < amountY; iY++) {
       particle = particles[i++];
       particle.position.y = 1.5 * (Math.cos((iX + count) * freqX) * 100) + (Math.sin((iY + count) * freqY) * 50);
-      particle.scale.x = particle.scale.y =  4 + ((Math.sin((iX + count) * 0.3) + 1) * 2 + (Math.sin((iY + count) * 0.5) + 1) * 2);
+      particle.scale.x = particle.scale.y =  4 + ((Math.sin((iX + count) * freqX) + 1) * 2 + (Math.sin((iY + count) * freqY) + 1) * 2);
     }
   }
 

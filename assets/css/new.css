@@ -7,6 +7,12 @@ header > ul {
   font-family: "PT_Sans", sans-serif;
 }
 
+header {
+  vertical-align: baseline;
+
+  align-items: baseline;
+}
+
 img {
   border: double;
   display: inline;
@@ -52,14 +58,14 @@ p {
 /*Sidebar*/
 
 #header {
+  padding-top: 10px;
   width: 80%;
   top: 0;
   position: fixed;
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
-  text-align: center;
-  align-items: baseline;
+  align-items: flex-end;
   margin: 0 10%;
   z-index: 2;
   border-bottom:  1px rgba(145, 145, 145, 1) solid;
@@ -72,6 +78,7 @@ p {
 
 #header > h1 {
   padding: 0 2% 0 0;
+  line-height: 125%;
 }
 
 #header li {

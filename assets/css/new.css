@@ -198,6 +198,7 @@ article > div {
 
   #header {
     flex-flow: column;
+    flex-wrap: wrap-reverse;
   }
 
   #header > * {
